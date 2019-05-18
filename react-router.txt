@@ -1,0 +1,43 @@
+
+
+
+REACT-ROUTER
+it does not come with REACT
+>npm install --save react-router-dom
+
+we gonna need 4things from react-ROUTER
+1)Browser router : it gonna hold the info of all the routes
+2)Switch: for grouping routes
+3)Route :display specific route
+4)Link: serve as anchor tag
+
+
+alias:
+different name for that thing
+use  'as'
+import {BrowserRouter as Router} from 'react-router-dom';
+
+
+go to index.js and place <App/> component within the BrowserRouter
+so that our app has access to all the routes that we are creating
+
+in app.js:
+import {Switch,Route} from 'react-router-dom
+
+
+
+Route:
+<Switch>
+
+  <Route  component={Default}></Route> //for any wrong route
+  <Route  path="/" component={ServiceList}></Route> //write this is bottom
+
+  //or use exact path <Route exact path="/" component={ServiceList}></Route>
+
+</Switch>
+
+
+
+
+WORKING WITH NAVBAR: navbar.js
+import {Link} from 'react-router-dom';

@@ -1,0 +1,9 @@
+
+WORKING WITH NAVBAR: navbar.js
+import {Link} from 'react-router-dom';
+
+
+<nav className="navbar navbar-expand-sm navbar-dark px-small-5"></nav> //woring with bootstrap navbar
+1)navbar-expand-sm - work for small screens
+2)navbar-dark - so that while hovering the link doesnot apper white
+3)px-small-5 - adding padding of 5 when in small screen

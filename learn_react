@@ -1,0 +1,104 @@
+</React.Fragment>
+its does not need to assign div again and again
+
+install ES7 REACT/REDUX/GRAPHQL/REACT-NATIVE SNIPPETS:
+so as to use the shorthands like rcc
+
+install Bracket Pair Colorizer
+
+ 3 more component we gonna create
+1)details
+2)cart
+3)default when the page is not found
+
+
+eg:
+import React,{Component} from 'react';
+
+class Cart extends Component{
+render(){
+    return(
+        <div>
+            Hello from Cart
+        </div>
+    )
+}
+}
+export default Cart;
+
+
+
+
+
+REACT-ROUTER
+it does not come with REACT
+>npm install --save react-router-dom
+
+we gonna need 4things from react-ROUTER
+1)Browser router : it gonna hold the info of all the routes
+2)Switch: for grouping routes
+3)Route :display specific route
+4)Link: serve as anchor tag
+
+
+alias:
+different name for that thing
+use  'as'
+import {BrowserRouter as Router} from 'react-router-dom';
+
+
+go to index.js and place <App/> component within the BrowserRouter
+so that our app has access to all the routes that we are creating
+
+in app.js:
+import {Switch,Route} from 'react-router-dom
+
+
+
+Route:
+<Switch>
+
+  <Route  component={Default}></Route> //for any wrong route
+  <Route  path="/" component={ServiceList}></Route> //write this is bottom
+
+  //or use exact path <Route exact path="/" component={ServiceList}></Route>
+
+</Switch>
+
+
+
+
+WORKING WITH NAVBAR: navbar.js
+import {Link} from 'react-router-dom';
+
+
+<nav className="navbar navbar-expand-sm navbar-dark px-small-5"></nav> //woring with bootstrap navbar
+1)navbar-expand-sm - work for small screens
+2)navbar-dark - so that while hovering the link doesnot apper white
+3)px-small-5 - adding padding of 5 when in small screen
+
+
+
+--ADDING LINKS TO IMAGES
+import logo from '../logo.jpg';
+
+inside NAVBAR component:
+
+  <Link to='/details'>
+                <img src={logo} alt="services" className="navbar-brand" height="80px"></img>
+  </Link>
+
+//when we click on that images it will take us to /details page
+
+//adding button for my Cart
+<Link to='/cart' className="ml-auto">
+                   <button>
+                       <i className='fas fa-cart-plus' /> My Cart
+                   </button>
+</Link>
+
+
+/////////////////////////////// STYLED COMPONENTS ///////////////
+https://www.styled-components.com/docs
+
+>npm install --save styled-compnents

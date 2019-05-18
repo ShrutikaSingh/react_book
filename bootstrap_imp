@@ -1,0 +1,9 @@
+ <nav className="navbar navbar-expand-sm bg-primary navbar-dark px-small-5">
+ 1)navbar-expand-sm - work for small screens
+ 2)navbar-dark - so that while hovering the link doesnot apper white
+ 3)px-small-5 - adding padding of 5 when in small screen
+
+<li className="nav-item ml-5"> //ml-5 margin left of 5
+
+ml-auto phir all the way to right
+mr-2 for margin right 2
